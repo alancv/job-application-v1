@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-<title>Grading System Database</title>
-<mega charset="utf-8">
-<style>
+<title>Capstone Project 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 
+<style>
 #myForm{
 position:absolute;
 border-style:solid;
@@ -13,15 +14,12 @@ background-color:#a3c1e2;
 box-shadow:10px 10px 5px #888888;
 padding:10px;
 }
-
 .tb{
 postion:absolute;
 left: 40%;
 }
-
 li{margin:5px;}
 ul{
-
 list-style:none;
 }
 #rqd{color:red;}
@@ -29,44 +27,52 @@ list-style:none;
 </head>
 
 <body>
-<div class="container">
-	<h2>Job Application</h2>
-	<p>Fill required areas for desired job.</p>
-</div>
+  <div class="container">
+    <h2>Job Application</h2>
+    <p>Fill required areas for desired job.</p>
+  </div>
 
-<div id="myForm">
-<form id="myform" name="theForm" class="group" action="process.php" method="POST">
-<legend>Account Info</legend>
-<ul>
-<li><label for="fName"><span id="rqd">*</span>First Name</label>
-<input type="text" name="firstName" class="tb" id="fName" placeholder= "First Name" pattern="[A-Za-z]+" required/></li>
-<li><label for="lName"><span id="rqd">*</span>Last Name</label>
-<input type="text" name="lastName" class="tb" id="fName" placeholder= "Last Name" pattern="[A-Za-z]+" required/></li>
-<li><label for="myEmail"><span id="rqd">*</span>Email</label>
-<input type="email" name="myEmail" class="tb" id="myEmail" placeholder="Email"/></li>
-<li><label for="myCity"><span id="rqd">*</span>City</label>
-<input type="text" name="mycity" class="tb" id="myCity" placeholder= "City" pattern="[A-Za-z]+" required/></li>
-<li><label for="myState"><span id="rqd">*</span>State</label>
-<input type="text" name="myState" class="tb" id="myState" placeholder= "2 letter state abbr" pattern="[A-Za-z](2)+" required/></li>
-<li><label for="myZip"><span id="rqd">*</span>Zip Code</label>
-<input type="text" name="myzip" class="tb" id="myZip" placeholder= "Zip Code" pattern="(\d(5))+" required/></li>
-<li><label for="myPhone"><span id="rqd">*</span>Phone Number</label>
-<input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="(\d(5))+" required/></li>
-<label for="languageField"> Department</label>
-<input type="text" list="departments" required/>
-<datalist id="departments"> 
-  <option value="Accounting">
-  <option value="Broadcasting">
-  <option value="Computer Science">
-  <option value="Communication">
-  <option value="Finance">
-  <option value="Information Technology (IT)">
-  <option value="Marketing">
-  <option value="Telecommunications">
-</datalist> </br> </br>
-<li><input type="submit" value="Submit"/></li>
-</ul>
-</form>
-</div>		
+  <!-- Start of Form -->
+  <div id="myForm">
+    <form id="myform" name="theForm" class="group" action="process.php" method="POST">
+    <legend>Account Info</legend>
+    <ul>
+      <li><label for="fName"><span id="rqd">*</span>First Name</label>
+      <input type="text" name="firstName" class="tb" id="fName" placeholder= "First Name" pattern="[A-Za-z]+" required/></li>
+
+      <li><label for="lName"><span id="rqd">*</span>Last Name</label>
+      <input type="text" name="lastName" class="tb" id="fName" placeholder= "Last Name" pattern="[A-Za-z]+" required/></li>
+
+      <li><label for="myEmail"><span id="rqd">*</span>Email</label>
+      <input type="email" name="myEmail" class="tb" id="myEmail" placeholder="Email"/></li>
+
+      <li><label for="myCity"><span id="rqd">*</span>City</label>
+      <input type="text" name="mycity" class="tb" id="myCity" placeholder= "City" pattern="[A-Za-z]+" required/></li>
+
+      <li><label for="myState"><span id="rqd">*</span>State</label>
+      <input type="text" name="myState" class="tb" id="myState" placeholder= "2 letter state abbr" pattern="[A-Za-z](2)+" required/></li>
+
+      <li><label for="myZip"><span id="rqd">*</span>Zip Code</label>
+      <input type="text" name="myzip" class="tb" id="myZip" placeholder= "Zip Code" pattern="(\d(5))+" required/></li>
+
+      <li><label for="myPhone"><span id="rqd">*</span>Phone Number</label>
+      <input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="(\d(5))+" required/></li>
+
+      <label for="languageField"> Department</label>
+      <input type="text" list="departments" required/>
+      <datalist id="departments"> 
+        <option value="Accounting">
+        <option value="Broadcasting">
+        <option value="Computer Science">
+        <option value="Communication">
+        <option value="Finance">
+        <option value="Information Technology (IT)">
+        <option value="Marketing">
+        <option value="Telecommunications">
+      </datalist> </br> </br>
+      <li><input type="submit" value="Submit"/></li>
+    </ul>
+    </form>
+  </div>    
 </body>
 </html>
