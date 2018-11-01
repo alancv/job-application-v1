@@ -50,16 +50,16 @@ list-style:none;
       <input type="text" name="mycity" class="tb" id="myCity" placeholder= "City" pattern="[A-Za-z]+" required/></li>
 
       <li><label for="myState"><span id="rqd">*</span>State</label>
-      <input type="text" name="myState" class="tb" id="myState" placeholder= "2 letter state abbr" pattern="[A-Za-z](2)+" required/></li>
+      <input type="text" name="myState" class="tb" id="myState" placeholder= "2 letter state abbr" pattern="[A-Za-z]{2}+" required/></li>
 
       <li><label for="myZip"><span id="rqd">*</span>Zip Code</label>
-      <input type="text" name="myzip" class="tb" id="myZip" placeholder= "Zip Code" pattern="(\d(5))+" required/></li>
+      <input type="text" name="myzip" class="tb" id="myZip" placeholder= "Zip Code" pattern="(\d{5}([\-]\d{4})?)+" required/></li>
 
       <li><label for="myPhone"><span id="rqd">*</span>Phone Number</label>
-      <input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="(\d(5))+" required/></li>
+      <input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required/></li>
 
       <li><label for="mySalary"><span id="rqd">*</span>Desired Salary</label>
-      <input type="text" name="myphone" class="tb" id="mySalary" placeholder= "Desired Salary" pattern="(\d(6))+" required/></li>
+      <input type="text" name="mysalary" class="tb" id="mySalary" placeholder= "Desired Salary" pattern="\d+(\.\d{2})?" required/></li>
 
       <li><label for="languageField"><span id="rqd">*</span>Department</label>
       <input type="text" list="departments" required/></li>
