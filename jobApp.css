@@ -1,0 +1,15 @@
+/* Universal */
+a,
+a:focus,
+a:hover {
+  color: #31373a;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  background-color: red;
+}
+
