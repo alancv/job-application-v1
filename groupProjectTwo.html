@@ -4,28 +4,14 @@
 <title>Capstone Project 2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/jobApp.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<style>
-#myForm{
-position:absolute;
-border-style:solid;
-width:30%;
-background-color:#a3c1e2;
-box-shadow:10px 10px 5px #888888;
-padding:10px;
-}
-.tb{
-postion:absolute;
-left: 40%;
-}
-li{margin:5px;}
-ul{
-list-style:none;
-}
-#rqd{color:red;}
-</style>
+<!-- Font Change -->
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
 </head>
 
+<!-- Start of Body -->
 <body>
   <div class="container">
     <h2>Job Application</h2>
@@ -58,10 +44,18 @@ list-style:none;
       <li><label for="myPhone"><span id="rqd">*</span>Phone Number</label>
       <input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required/></li>
 
-      <li><label for="mySalary"><span id="rqd">*</span>Desired Salary</label>
-      <input type="text" name="mysalary" class="tb" id="mySalary" placeholder= "Desired Salary" pattern="\d+(\.\d{2})?" required/></li>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
 
-      <li><label for="languageField"><span id="rqd">*</span>Department</label>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="mysalary" class="tb" id="mySalary" placeholder= "Desired Salary" pattern="\d+(\.\d{6})?" required/>
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
+      </div>
+
+      <li><label for="departmentField"><span id="rqd">*</span>Department</label>
       <input type="text" list="departments" required/></li>
       <datalist id="departments"> 
         <option value="Accounting">
@@ -75,8 +69,29 @@ list-style:none;
       </datalist> </br> </br>
       
       <li><input type="submit" value="Submit"/></li>
+
+        <li><label for="departmentField"><span id="rqd">*</span>Departmets</label></li>
+        <select class="custom-select d-block w-100" id="country" required>
+        <datalist id="departments">
+          <option value="">Choose...</option>
+          <option value="Accounting">Accounting</option>
+          <option value="Broadcasting">Broadcasting</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Communication">Communication</option>
+          <option value="Finance">Finance</option>
+          <option value="Information Technology (IT)">Information Technology (IT)</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Telecommunications">Telecommunications</option>
+        </datalist> </br> </br>
+        </select>
     </ul>
     </form>
-  </div>    
+  </div>   
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script> 
 </body>
 </html>
