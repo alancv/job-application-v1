@@ -10,6 +10,25 @@ body {
   height: 100%;
   font-family: 'Comfortaa', cursive;
   margin: 0;
-  background-color: red;
 }
 
+/* Start of Body */
+ul li{
+	list-style-type: none;
+}
+
+.appDescription{
+	text-align: center; 
+}
+
+#testSal {
+	width: 40%;
+}
+
+#testDepartment {
+	width: 40%;
+}
+
+.jobForm {
+	padding-left: 40px;
+}
