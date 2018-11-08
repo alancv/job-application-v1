@@ -44,7 +44,7 @@
       <li><label for="myPhone"><span id="rqd">*</span>Phone Number</label>
       <input type="text" name="myphone" class="tb" id="myPhone" placeholder= "Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required/></li>
 
-      <div class="input-group mb-3">
+      <div class="input-group mb-3" id="testSal">
         <div class="input-group-prepend">
           <span class="input-group-text">$</span>
         </div>
@@ -55,23 +55,9 @@
         </div>
       </div>
 
-      <li><label for="departmentField"><span id="rqd">*</span>Department</label>
-      <input type="text" list="departments" required/></li>
-      <datalist id="departments"> 
-        <option value="Accounting">
-        <option value="Broadcasting">
-        <option value="Computer Science">
-        <option value="Communication">
-        <option value="Finance">
-        <option value="Information Technology (IT)">
-        <option value="Marketing">
-        <option value="Telecommunications">
-      </datalist> </br> </br>
-      
-      <li><input type="submit" value="Submit"/></li>
-
-        <li><label for="departmentField"><span id="rqd">*</span>Departmets</label></li>
-        <select class="custom-select d-block w-100" id="country" required>
+      <li><label for="departmentField"><span id="rqd">*</span>Departmets</label></li>
+        
+        <select class="custom-select d-block w-100" id="testDepartment" required>
         <datalist id="departments">
           <option value="">Choose...</option>
           <option value="Accounting">Accounting</option>
@@ -83,7 +69,23 @@
           <option value="Marketing">Marketing</option>
           <option value="Telecommunications">Telecommunications</option>
         </datalist> </br> </br>
-        </select>
+        </select> </br> </br>
+
+      <!--
+      <li><label for="departmentField"><span id="rqd">*</span>Department</label>
+      <input type="text" list="departments" required/></li>
+      <datalist id="departments"> 
+        <option value="Accounting">
+        <option value="Broadcasting">
+        <option value="Computer Science">
+        <option value="Communication">
+        <option value="Finance">
+        <option value="Information Technology (IT)">
+        <option value="Marketing">
+        <option value="Telecommunications">
+      </datalist> </br> </br> -->
+      
+      <li><input type="submit" value="Submit"/></li>
     </ul>
     </form>
   </div>   
