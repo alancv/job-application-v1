@@ -13,13 +13,13 @@
 
 <!-- Start of Body -->
 <body>
-  <div class="container">
+  <div class="appDescription">
     <h2>Job Application</h2>
     <p>Fill required areas for desired job.</p>
   </div>
 
   <!-- Start of Form -->
-  <div id="myForm">
+  <div class="jobForm" id="myForm">
     <form id="myform" name="theForm" class="group" action="process.php" method="POST">
     <legend>Account Info</legend>
     <ul>
@@ -57,7 +57,7 @@
 
       <li><label for="departmentField"><span id="rqd">*</span>Departmets</label></li>
         
-        <select class="custom-select d-block w-100" id="testDepartment" required>
+        <select class="custom-select d-block w-50" required>
         <datalist id="departments">
           <option value="">Choose...</option>
           <option value="Accounting">Accounting</option>
